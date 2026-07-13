@@ -55,6 +55,9 @@ describe('modulo', () => {
   test('modulo with negative dividend', () => {
     expect(modulo(-7, 3)).toBe(-1);
   });
+  test('modulo by zero returns NaN', () => {
+    expect(modulo(5, 0)).toBeNaN();
+  });
 });
 
 describe('power', () => {
